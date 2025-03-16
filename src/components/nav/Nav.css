@@ -1,0 +1,133 @@
+/* General Nav Container */
+.nav_container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: #fa6b9bf4;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Logo */
+.logo_container img {
+  height: 70px;
+  margin: 1rem 0rem 0rem 3rem;
+  width: clamp(17rem, 2vw, 20rem);
+}
+
+/* Hamburger Button */
+.menu-toggle {
+  font-size: 24px;
+  transform: translateX(-3rem);
+  background: none;
+  border: none;
+  cursor: pointer;
+  display: none;
+}
+
+/* Mobile Menu Overlay */
+.nav_overlay {
+  position: fixed;
+  top: 0;
+  right: -100%;
+  width: 60%;
+  height: 100vh;
+  background-color: rgba(255, 255, 255, 0.95);
+  box-shadow: -2px 0 5px rgba(0, 0, 0, 0.2);
+  transition: right 0.3s ease-in-out;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Active Class to Show Menu */
+.nav_overlay.active {
+  right: 0;
+}
+
+.nav_menu1 {
+  display: flex;
+  gap: 3rem;
+  transform: translateX(-3rem);
+  padding: 15px;
+  justify-content: center;
+}
+
+.nav_menu1 button {
+  font-size: 18px;
+  font-weight: bold;
+  padding: 10px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.nav_menu1 button:hover {
+  color: #ffffff;
+  font-size: 1rem;
+}
+
+.nav_menu1 button:active {
+  color: #ff4081;
+  font-size: 1rem;
+}
+
+.nav_menu {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  align-items: center;
+  padding: 20px;
+}
+
+/* Soft, Minimal Button Design */
+.nav_menu button {
+  font-size: 18px;
+  padding: 12px 24px;
+  border: 2px solid #a0e7e5;
+  border-radius: 12px;
+  background-color: #ffffff;
+  color: #333;
+  cursor: pointer;
+  font-weight: 500;
+  text-transform: capitalize;
+  transition: all 0.3s ease-in-out;
+  box-shadow: 0px 4px 10px rgba(160, 231, 229, 0.2);
+}
+
+/* Hover Effect - Soft Color Change */
+.nav_menu button:hover {
+  background-color: #a0e7e5;
+  color: #ffffff;
+  border-color: transparent;
+  box-shadow: 0px 6px 15px rgba(160, 231, 229, 0.4);
+}
+
+/* Click Animation - Soft Press Effect */
+.nav_menu button:active {
+  transform: scale(0.96);
+  box-shadow: 0px 2px 8px rgba(160, 231, 229, 0.3);
+}
+
+/* Subtle Transition */
+.nav_menu button {
+  transition: background-color 0.3s ease, transform 0.2s ease,
+    box-shadow 0.3s ease;
+}
+
+/* Responsive Styles */
+@media (max-width: 890px) {
+  .nav_menu1 {
+    display: none;
+  }
+  .menu-toggle {
+    display: block;
+    margin: 10px;
+  }
+}

@@ -1,0 +1,145 @@
+/* General Footer Styles */
+.footer_container {
+  background: #f8f9fa;
+  color: #333;
+  padding: 2rem 0;
+  font-family: Arial, sans-serif;
+}
+
+/* Footer Top Section */
+.footer_top {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  padding: 1rem;
+  border-bottom: 1px solid #ddd;
+}
+
+.footer_about img {
+  width: 100%;
+  max-width: 25rem;
+  height: auto;
+}
+
+.footer_about h2 {
+  color: #ff4081;
+  font-size: 1.8rem;
+  margin: 1rem 0;
+  text-shadow: none;
+}
+
+.footer_about p {
+  font-size: 1rem;
+  margin: 5px 0;
+}
+
+.footer_contact h3,
+.footer_branches h3,
+.footer_products h3 {
+  color: #444;
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+}
+
+.footer_contact p,
+.footer_branches ul,
+.footer_products p {
+  font-size: 1rem;
+}
+
+.footer_branches ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer_branches ul li {
+  margin: 3px 0;
+}
+
+.footer_contact a {
+  color: #ff4081;
+  text-decoration: none;
+}
+
+.footer_contact a:hover {
+  text-decoration: underline;
+}
+
+/* Footer Bottom Section */
+.footer_bottom {
+  text-align: center;
+  padding: 1rem 0;
+  font-size: 0.9rem;
+}
+
+.footer_socials {
+  margin-top: 10px;
+}
+
+.footer_socials a {
+  margin: 0 10px;
+  color: #ff4081;
+  font-size: 1.5rem;
+  transition: transform 0.3s ease-in-out;
+}
+
+.footer_socials a:hover {
+  transform: scale(1.2);
+  filter: drop-shadow(2px 6px 15px #ff4081);
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+  .footer_top {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .footer_about img {
+    max-width: 80%;
+    margin-bottom: 1rem;
+  }
+
+  .footer_about h2 {
+    font-size: 1.5rem;
+  }
+
+  .footer_contact,
+  .footer_branches,
+  .footer_products {
+    width: 100%;
+    margin-bottom: 1rem;
+  }
+
+  .footer_contact p,
+  .footer_branches ul li,
+  .footer_products p {
+    font-size: 0.9rem;
+  }
+
+  .footer_socials a {
+    font-size: 1.3rem;
+    margin: 0 8px;
+  }
+}
+
+@media (max-width: 480px) {
+  .footer_about h2 {
+    font-size: 1.2rem;
+  }
+
+  .footer_contact p,
+  .footer_branches ul li,
+  .footer_products p {
+    font-size: 0.85rem;
+  }
+
+  .footer_socials a {
+    font-size: 1.2rem;
+  }
+
+  .footer_bottom {
+    font-size: 0.8rem;
+  }
+}

@@ -1,0 +1,298 @@
+/* Hero Banner Section */
+.section1 {
+  position: relative;
+  width: 100%;
+  height: 750px; /* Adjust height as needed */
+  background: #f9f9f9; /* Lighter modern background */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+/* Container for banner and bubbles */
+.banner-container {
+  position: relative;
+  width: 90%;
+  max-width: 1200px;
+  height: 100%;
+  padding: 30px; /* Extra padding for content spacing */
+  margin: 40px auto; /* Extra margin for spacing */
+}
+
+/* Bubbles & Hearts Container */
+.bubbles {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none; /* Allow clicks to pass through */
+}
+
+/* Keyframes for Floating Animation */
+@keyframes floatUp {
+  0% {
+    transform: translateY(0) scale(0.8);
+    opacity: 0;
+  }
+  25% {
+    opacity: 0.6;
+  }
+  50% {
+    transform: translateY(-100px) scale(1);
+    opacity: 0.8;
+  }
+  75% {
+    opacity: 0.4;
+  }
+  100% {
+    transform: translateY(-200px) scale(1.2);
+    opacity: 0;
+  }
+}
+
+/* Keyframes for automated bubble glow */
+@keyframes bubbleGlow {
+  0% {
+    box-shadow: 0 0 8px rgba(230, 240, 255, 0.6);
+  }
+  50% {
+    box-shadow: 0 0 20px rgba(230, 240, 255, 1);
+  }
+  100% {
+    box-shadow: 0 0 8px rgba(230, 240, 255, 0.6);
+  }
+}
+
+/* Main Bubble Style: More visible with a blue tint */
+.bubble {
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  background: radial-gradient(
+    circle at 30% 30%,
+    rgba(230, 240, 255, 1) 0%,
+    rgba(230, 240, 255, 0.8) 70%
+  );
+  border: 2px solid rgba(230, 240, 255, 1);
+  border-radius: 50%;
+  box-shadow: 0 0 15px rgba(230, 240, 255, 0.8);
+  animation: floatUp 12s ease-in-out infinite,
+    bubbleGlow 3s ease-in-out infinite;
+}
+
+/* Smaller Bubble Style with similar glow effect */
+.small-bubble {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  background: radial-gradient(
+    circle at 30% 30%,
+    rgba(230, 240, 255, 1) 0%,
+    rgba(230, 240, 255, 0.8) 70%
+  );
+  border: 2px solid rgba(230, 240, 255, 1);
+  border-radius: 50%;
+  box-shadow: 0 0 8px rgba(230, 240, 255, 0.8);
+  animation: floatUp 14s ease-in-out infinite,
+    bubbleGlow 3s ease-in-out infinite;
+}
+
+/* Enhanced Heart Style with gradient for a realistic look */
+.heart {
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  background: linear-gradient(135deg, #ff6b81, #ff4081);
+  transform: rotate(-45deg);
+  opacity: 0;
+  animation: floatUp 14s ease-in-out infinite;
+}
+.heart::before,
+.heart::after {
+  content: "";
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  background: linear-gradient(135deg, #ff6b81, #ff4081);
+  border-radius: 50%;
+}
+.heart::before {
+  top: -20px;
+}
+.heart::after {
+  left: 20px;
+}
+
+/* Content inside the banner */
+.content {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px;
+  height: 100%;
+}
+
+/* Baby Image Styling and Floating Animation */
+.baby-image {
+  width: 400px; /* Adjust as needed */
+  height: auto;
+  border-radius: 10px;
+  animation: floatImage 6s ease-in-out infinite;
+}
+
+/* Keyframes for Floating Image */
+@keyframes floatImage {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+/* Banner Heading Styling with Modern Animation */
+.banner-heading {
+  font-size: 48px;
+  color: #333; /* Dark text for contrast */
+  text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.2);
+  animation: modernEnter 1.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) forwards;
+  opacity: 0;
+  margin-left: 20px;
+  background-color: transparent;
+}
+
+/* Keyframes for the Modern Enter Animation */
+@keyframes modernEnter {
+  0% {
+    opacity: 0;
+    transform: translateY(20px) scale(0.95) rotateX(10deg);
+  }
+  50% {
+    opacity: 0.8;
+    transform: translateY(0) scale(1.05) rotateX(0deg);
+  }
+  70% {
+    transform: translateY(0) scale(0.98);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+
+/* Contacts Section */
+.contacts {
+  max-width: 600px;
+  margin: 40px auto;
+  padding: 20px;
+  background-color: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  animation: fadeIn 1s ease-out;
+}
+
+.contacts h2 {
+  font-size: 2rem;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.contacts p {
+  font-size: 1.2rem;
+  color: #555;
+  margin-bottom: 20px;
+}
+
+.contact-methods {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.contact-method {
+  display: flex;
+  align-items: center;
+  margin: 15px 0;
+  animation: slideIn 0.5s ease-out;
+}
+
+.contact-method:nth-child(even) {
+  animation-delay: 0.2s;
+}
+
+.contact-method:nth-child(odd) {
+  animation-delay: 0.4s;
+}
+
+.contact-icon {
+  font-size: 2rem;
+  color: #ff4081;
+  margin-right: 15px;
+}
+
+.contact-method div {
+  text-align: left;
+}
+
+.contact-method a {
+  color: #007bff;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.contact-method a:hover {
+  color: #0056b3;
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes slideIn {
+  from {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .contacts {
+    padding: 15px;
+  }
+
+  .contact-method {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .contact-icon {
+    margin-bottom: 10px;
+  }
+
+  .baby-image {
+    display: none;
+  }
+}
+.categories,
+.location,
+.aboutUs,
+.contacts {
+  scroll-margin-top: 100px;
+}

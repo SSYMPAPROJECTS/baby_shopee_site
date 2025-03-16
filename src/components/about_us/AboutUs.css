@@ -1,0 +1,97 @@
+/* About Us Section Styles */
+.about-us-container {
+  background: linear-gradient(to left, antiquewhite, white);
+  padding: 40px;
+  border-radius: 18px;
+  max-width: 900px;
+  margin: 0 auto;
+  margin-top: 3rem;
+  box-shadow: 0 5px 30px rgba(0, 0, 0, 0.1);
+  animation: fadeIn 1.5s ease-in;
+}
+
+h2 {
+  font-size: 1.8rem;
+  font-weight: 600;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+p {
+  font-size: 1.3rem;
+  color: #555;
+  line-height: 1.6;
+  margin-bottom: 15px;
+}
+
+.contact-info {
+  margin-top: 20px;
+}
+
+.team {
+  margin-top: 40px;
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+
+.team-member {
+  display: inline-block;
+  width: 200px;
+  margin: 0 15px;
+  padding: 2rem;
+  border-radius: 15px;
+}
+
+.team-member img {
+  width: 100%;
+  border-radius: 30%;
+  border: 5px solid #fff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.team-member-info {
+  margin-top: 30px;
+}
+
+.team-member-info p {
+  font-size: 1.1rem;
+  font-weight: 500;
+  color: #333;
+}
+
+/* Animation */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* Fluent Design Enhancements */
+.about-us-container {
+  backdrop-filter: blur(10px);
+}
+
+h2 {
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+p {
+  transition: color 0.3s ease;
+}
+
+p:hover {
+  color: rgb(0, 0, 0);
+}
+
+.team-member {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.team-member:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+  color: antiquewhite;
+}
