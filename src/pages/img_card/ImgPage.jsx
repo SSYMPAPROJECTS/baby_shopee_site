@@ -69,7 +69,7 @@ import d_3 from '../../assets/images/diapers/d_3.webp';
 import d_4 from '../../assets/images/diapers/d_4.webp';
 
 const imageData = {
-    "clothing_banner": { 
+    "clothing": { 
         src: img1, 
         title: "Baby Clothing", 
         description: "Trendy and comfortable clothing for babies and kids.",
@@ -86,96 +86,96 @@ const imageData = {
         ]
         
     },
-    "baby_access_banner": { 
+    "baby_access": { 
         src: img2, 
         title: "Baby Accessories", 
         description: "Essential accessories for babies.",
-        price: "$5 onwards",
+        price: "₹700 onwards",
         extra: [
-            { img: ba_1, title: "Baby Clothing", desc: "Trendy outfits.", price: "$10 onwards" },
-            { img: ba_2, title: "Newborn Essentials", desc: "Newborn care products.", price: "$8 onwards" },
-            { img: ba_3, title: "Baby Clothing", desc: "Trendy outfits.", price: "$10 onwards" },
-            { img: ba_4, title: "Newborn Essentials", desc: "Newborn care products.", price: "$8 onwards" },
-            { img: ba_5, title: "Baby Clothing", desc: "Trendy outfits.", price: "$10 onwards" },
-            { img: ba_6, title: "Newborn Essentials", desc: "Newborn care products.", price: "$8 onwards" },
-            { img: ba_7, title: "Baby Clothing", desc: "Trendy outfits.", price: "$10 onwards" },
-            { img: ba_8, title: "Newborn Essentials", desc: "Newborn care products.", price: "$8 onwards" },
-            { img: ba_9, title: "Baby Clothing", desc: "Trendy outfits.", price: "$10 onwards" },
-            { img: ba_10, title: "Newborn Essentials", desc: "Newborn care products.", price: "$8 onwards" },
-            { img: ba_11, title: "Baby Clothing", desc: "Trendy outfits.", price: "$10 onwards" },
-        ]
+            { img: ba_1, title: "Medicine Feeder", desc: "Safe and easy way to administer medicine to babies." },
+            { img: ba_2, title: "Feeding Accessories", desc: "Essential tools for a smooth feeding experience." },
+            { img: ba_3, title: "Baby Thermometer", desc: "Accurate temperature measurement for baby care." },
+            { img: ba_4, title: "Baby Teether", desc: "Soothing teether to relieve teething discomfort." },
+            { img: ba_5, title: "Baby Straw Brush", desc: "Designed to clean baby straws with ease." },
+            { img: ba_6, title: "Baby Nail Clipper", desc: "Gentle and safe nail trimming for infants." },
+            { img: ba_7, title: "Baby Bottle Brush", desc: "Effective cleaning brush for baby bottles." },
+            { img: ba_8, title: "Dallue", desc: "Soft and comforting newborn care product." },
+            { img: ba_9, title: "Baby Pacifier", desc: "Soothing pacifier for babies' comfort and relaxation." },
+            { img: ba_10, title: "Baby Nose Cleaner", desc: "Gentle suction tool for clearing nasal congestion." },
+            { img: ba_11, title: "Silicone Baby Spoon", desc: "Soft and safe spoon for baby feeding." },
+        ]        
     },
-    "baby_bed_banner": { 
+    "baby_bed": { 
         src: img3, 
         title: "Baby Bedding",
         description: "Soft and cozy bedding sets for infants.",
-        price: "$20 onwards",
+        price: "₹890 onwards",
         extra: [
-            { img: b_1, title: "Baby Gear", desc: "Strollers and carriers.", price: "$30 onwards" },
-            { img: b_2, title: "Baby Care Products", desc: "Safe skincare.", price: "$15 onwards" },
-            { img: b_3, title: "Baby Care Products", desc: "Safe skincare.", price: "$15 onwards" },
-            { img: b_4, title: "Baby Care Products", desc: "Safe skincare.", price: "$15 onwards" },
-            { img: b_5, title: "Baby Care Products", desc: "Safe skincare.", price: "$15 onwards" },
-            { img: b_6, title: "Baby Care Products", desc: "Safe skincare.", price: "$15 onwards" },
-        ]
+            { img: b_1, title: "Mosquito Net", desc: "Protects babies from mosquitoes and insects while sleeping." },
+            { img: b_2, title: "Muslin Swaddle", desc: "Soft and breathable swaddle for newborn comfort." },
+            { img: b_3, title: "Wrapping", desc: "Cozy and gentle wrap to keep babies warm and secure." },
+            { img: b_4, title: "Baby Sleeping Bag", desc: "Comfortable and safe sleeping bag for sound sleep." },
+            { img: b_5, title: "Blanket", desc: "Ultra-soft and warm blanket for babies." },
+            { img: b_6, title: "Soft Mattress & Pillows", desc: "Plush and supportive bedding set for a peaceful rest." },
+        ]        
     },
-    "new_born_ess_banner": { 
+    "new_born_ess": { 
         src: img4, 
         title: "Newborn Essentials",
         description: "Everything your newborn needs.",
-        price: "$8 onwards",
+        price: "₹1500 onwards",
         extra: [
-            { img: be_1, title: "Baby Clothing", desc: "Adorable baby wear.", price: "$10 onwards" },
-            { img: be_2, title: "Baby Accessories", desc: "Stylish add-ons.", price: "$5 onwards" },
-            { img: be_3, title: "Baby Clothing", desc: "Adorable baby wear.", price: "$10 onwards" },
-            { img: be_4, title: "Baby Accessories", desc: "Stylish add-ons.", price: "$5 onwards" },
-            { img: be_5, title: "Baby Clothing", desc: "Adorable baby wear.", price: "$10 onwards" },
-            { img: be_6, title: "Baby Accessories", desc: "Stylish add-ons.", price: "$5 onwards" },
-            { img: be_7, title: "Baby Clothing", desc: "Adorable baby wear.", price: "$10 onwards" },
-            { img: be_8, title: "Baby Accessories", desc: "Stylish add-ons.", price: "$5 onwards" },
-        ]
+            { img: be_1, title: "Wooden Baby Cradle", desc: "Traditional and sturdy wooden cradle for babies." },
+            { img: be_2, title: "Waterproof Bed Protector", desc: "Soft and absorbent protector to keep the bed dry." },
+            { img: be_3, title: "Cap Towel", desc: "Hooded towel to keep babies warm after a bath." },
+            { img: be_4, title: "Newborn Sweater Set", desc: "Cozy and warm sweater set for newborns." },
+            { img: be_5, title: "Cap, Mitten, and Booties", desc: "Soft and comfortable winter essentials for babies." },
+            { img: be_6, title: "Bath Towel", desc: "Gentle and ultra-soft towel for baby bath time." },
+            { img: be_7, title: "Newborn Jabla", desc: "Lightweight and breathable cotton jabla for infants." },
+            { img: be_8, title: "Full Set Overview", desc: "Complete newborn essentials in a single package." },
+        ]        
     },
-    "baby_gear_banner": { 
+    "baby_gear": { 
         src: img5, 
         title: "Baby Gear",
         description: "Quality strollers, carriers, and more.",
-        price: "$30 onwards",
+        price: "₹500 onwards",
         extra: [
-            { img: bg_1, title: "Baby Bedding", desc: "Comfortable bedding.", price: "$20 onwards" },
-            { img: bg_2, title: "Baby Care Products", desc: "Skin-friendly care.", price: "$15 onwards" },
-            { img: bg_3, title: "Baby Bedding", desc: "Comfortable bedding.", price: "$20 onwards" },
-            { img: bg_4, title: "Baby Care Products", desc: "Skin-friendly care.", price: "$15 onwards" },
-            { img: bg_5, title: "Baby Bedding", desc: "Comfortable bedding.", price: "$20 onwards" },
-            { img: bg_6, title: "Baby Care Products", desc: "Skin-friendly care.", price: "$15 onwards" },
-            { img: bg_7, title: "Baby Bedding", desc: "Comfortable bedding.", price: "$20 onwards" },
-            { img: bg_8, title: "Baby Care Products", desc: "Skin-friendly care.", price: "$15 onwards" },
-            { img: bg_9, title: "Baby Bedding", desc: "Comfortable bedding.", price: "$20 onwards" },
-            { img: bg_10, title: "Baby Care Products", desc: "Skin-friendly care.", price: "$15 onwards" },
+            { img: bg_1, title: "Baby Carry Cot", desc: "Soft and secure carry cot for ultimate comfort." },
+            { img: bg_2, title: "Baby Pram", desc: "Smooth and safe ride for your little one." },
+            { img: bg_3, title: "Bike for Kids", desc: "Fun and sturdy bike designed for young riders." },
+            { img: bg_4, title: "Educational Toys", desc: "Engaging toys to boost learning and creativity." },
+            { img: bg_5, title: "Soft Toys for Babies", desc: "Cuddly and plush toys for endless fun." },
+            { img: bg_6, title: "Car for Kids", desc: "Exciting toy car for playful adventures." },
+            { img: bg_7, title: "Baby Bedding", desc: "Cozy and breathable bedding for sound sleep." },
+            { img: bg_8, title: "Baby Ride-On Toy", desc: "Interactive ride-on toy for active toddlers." },
+            { img: bg_9, title: "Baby Tricycle", desc: "Durable and safe tricycle for little explorers." },
+            { img: bg_10, title: "Baby Walker", desc: "Supportive walker to help babies take their first steps." },
         ]
     },
-    "baby_care_banner": {
+    "baby_care": {
         src: img6,
         title: "Baby Care Products",
         description: "Gentle and safe baby care essentials.",
-        price: "$15 onwards",
+        price: "₹577 onwards",
         extra: [
-            { img: bc_1, title: "Baby Clothing", desc: "Soft baby wear.", price: "$10 onwards" },
-            { img: bc_2, title: "Baby Accessories", desc: "Trendy accessories.", price: "$5 onwards" },
-            { img: bc_3, title: "Baby Clothing", desc: "Soft baby wear.", price: "$10 onwards" },
-            { img: bc_4, title: "Baby Accessories", desc: "Trendy accessories.", price: "$5 onwards" },
-            { img: bc_5, title: "Baby Clothing", desc: "Soft baby wear.", price: "$10 onwards" },
-            { img: bc_6, title: "Baby Accessories", desc: "Trendy accessories.", price: "$5 onwards" },
-            { img: bc_7, title: "Baby Clothing", desc: "Soft baby wear.", price: "$10 onwards" },
-            { img: d_1, title: "Baby Accessories", desc: "Trendy accessories.", price: "$5 onwards" },
-            { img: d_2, title: "Baby Clothing", desc: "Soft baby wear.", price: "$10 onwards" },
-            { img: d_3, title: "Baby Accessories", desc: "Trendy accessories.", price: "$5 onwards" },
-            { img: d_4, title: "Baby Clothing", desc: "Soft baby wear.", price: "$10 onwards" },
-            { img: bb_1, title: "Baby Accessories", desc: "Trendy accessories.", price: "$5 onwards" },
-            { img: bb_2, title: "Baby Clothing", desc: "Soft baby wear.", price: "$10 onwards" },
-            { img: bb_3, title: "Baby Accessories", desc: "Trendy accessories.", price: "$5 onwards" },
-            { img: bb_4, title: "Baby Clothing", desc: "Soft baby wear.", price: "$10 onwards" },
-            { img: bb_5, title: "Baby Accessories", desc: "Trendy accessories.", price: "$5 onwards" },
-        ]
+            { img: bc_1, title: "Cetaphil Brand", desc: "Gentle skincare essentials for babies." },
+            { img: bc_2, title: "Chicco Brand", desc: "High-quality baby care products and accessories." },
+            { img: bc_3, title: "Himalayas Brand", desc: "Herbal and natural baby care solutions." },
+            { img: bc_4, title: "Mee Mee Brand", desc: "Trusted baby care products for daily use." },
+            { img: bc_5, title: "Sample Set 1", desc: "Curated baby essentials for comfort and care." },
+            { img: bc_6, title: "Sample Set 2", desc: "A mix of must-have baby accessories." },
+            { img: bc_7, title: "Sebamed Brand", desc: "Dermatologist-tested skincare for babies." },
+            { img: d_1, title: "Baby Diapers", desc: "Soft and absorbent diapers for babies." },
+            { img: d_2, title: "Bamboo Eco-Friendly Baby Diaper", desc: "Sustainable and skin-friendly diaper choice." },
+            { img: d_3, title: "Disposable Diaper", desc: "Convenient and hygienic disposable diaper." },
+            { img: d_4, title: "Reusable Diaper", desc: "Eco-friendly washable diaper for babies." },
+            { img: bb_1, title: "Baby Shampoo Hat", desc: "Helps protect baby's eyes during bath time." },
+            { img: bb_2, title: "Baby Wipes", desc: "Soft and gentle wipes for baby care." },
+            { img: bb_3, title: "Bath Time Cap", desc: "Comfortable cap for a fun bath experience." },
+            { img: bb_4, title: "Baby Shower Cap", desc: "Waterproof cap to keep water out of eyes." },
+            { img: bb_5, title: "Baby Bath Duck Toy", desc: "Cute and fun floating toy for bath time." },
+        ]        
     },
 };
 

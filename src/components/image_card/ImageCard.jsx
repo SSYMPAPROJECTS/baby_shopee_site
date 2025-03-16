@@ -9,12 +9,12 @@ import img5 from '../../assets/images/banners/baby_gear_banner.jpg';
 import img6 from '../../assets/images/banners/baby_care_banner.jpg';
 
 const images = [
-    { id: "clothing_banner", src: img1, title: "Baby Clothing" },
-    { id: "baby_access_banner", src: img2, title: "Baby Accessories" },
-    { id: "baby_bed_banner", src: img3, title: "Baby Bedding" },
-    { id: "new_born_ess_banner", src: img4, title: "Newborn Essentials" },
-    { id: "baby_gear_banner", src: img5, title: "Baby Gear" },
-    { id: "baby_care_banner", src: img6, title: "Baby Care Products" }
+    { id: "clothing", src: img1, title: "Baby Clothing" },
+    { id: "baby_access", src: img2, title: "Baby Accessories" },
+    { id: "baby_bed", src: img3, title: "Baby Bedding" },
+    { id: "new_born_ess", src: img4, title: "Newborn Essentials" },
+    { id: "baby_gear", src: img5, title: "Baby Gear" },
+    { id: "baby_care", src: img6, title: "Baby Care Products" }
 ];
 
 const ImageCard = () => {

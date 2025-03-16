@@ -42,7 +42,9 @@ const Footer = () => {
         <p>&copy; {new Date().getFullYear()} Baby Shopee. All rights reserved.</p>
         <div className="footer_socials">
           
-          <a href="#"><FaInstagram /></a>
+          <a href="https://www.instagram.com/babyshopee_cbe?igsh=MWV0NzVlanVjZTB2bw%3D%3D&utm_source=qr"
+          target="_blank"
+          rel="noopener noreferrer"><FaInstagram /></a>
   
         </div>
       </div>
