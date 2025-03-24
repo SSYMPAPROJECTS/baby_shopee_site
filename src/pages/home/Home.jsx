@@ -79,38 +79,53 @@ const Home = () => {
         <AboutUs />
       </div>
       <div ref={contactsRef} className="contacts">
-  <h2>Contact Us</h2>
-  <p>
-    For any inquiries or support, feel free to contact us through the methods below.
-  </p>
-  <div className="contact-methods">
-    <div className="contact-method">
-      <FaPhoneAlt className="contact-icon" />
-      <div>
-        <strong>Phone:</strong>
-        <p>9629016864, 7358936864</p>
+      <h2>Contact Us</h2>
+      <p>
+        For any inquiries or support, feel free to contact us through the
+        methods below.
+      </p>
+      <div className="contact-methods">
+        {/* Phone Section */}
+        <div className="contact-method">
+          <FaPhoneAlt className="contact-icon" />
+          <div>
+            <strong>Phone:</strong>
+            <p>
+              <a href="tel:+919629016864">9629016864</a>
+              {" | "}
+              <a href="tel:+917358936864">7358936864</a>
+            </p>
+          </div>
+        </div>
+
+        {/* WhatsApp Section */}
+        <div className="contact-method">
+          <FaWhatsapp className="contact-icon" />
+          <div>
+            <strong>WhatsApp:</strong>
+            <p>
+              <a
+                href="https://wa.me/919629016864"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                9629016864
+              </a>
+              {" | "}
+              <a
+                href="https://wa.me/917358936864"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                7358936864
+              </a>
+            </p>
+          </div>
+        </div>
       </div>
     </div>
-    <div className="contact-method">
-      <FaWhatsapp className="contact-icon" />
-      <div>
-        <strong>WhatsApp:</strong>
-        <p>
-          <a href="https://wa.me/9629016864" target="_blank" rel="noopener noreferrer">
-            9629016864
-          </a>
-          {" | "}
-          <a href="https://wa.me/7358936864" target="_blank" rel="noopener noreferrer">
-            7358936864
-          </a>
-        </p>
-      </div>
-    </div>
-  </div>
-</div>
-
-
       <Footer />
+      <div className="orange_container"></div>
     </div>
   );
 };

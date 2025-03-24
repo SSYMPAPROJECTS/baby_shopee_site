@@ -3,11 +3,13 @@ import { useNavigate } from "react-router-dom";
 import { FaMapMarkerAlt } from "react-icons/fa";
 import "./Loc.css";
 
+// Locations Array with New Location Added
 const locations = [
     { id: "periyanaickenpalayam", name: "Periyanaickenpalayam" },
     { id: "thudiyalur", name: "Thudiyalur" },
     { id: "mettupalayam", name: "Mettupalayam" },
     { id: "nehrunagar", name: "Nehrunagar" },
+    { id: "annur", name: "Annur" }, // ✅ Added Annur Location
 ];
 
 const Loc = () => {

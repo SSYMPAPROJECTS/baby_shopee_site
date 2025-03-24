@@ -8,55 +8,122 @@
   margin-top: 3rem;
   box-shadow: 0 5px 30px rgba(0, 0, 0, 0.1);
   animation: fadeIn 1.5s ease-in;
+  backdrop-filter: blur(10px);
 }
 
+/* Heading Styles */
 h2 {
   font-size: 1.8rem;
   font-weight: 600;
   color: #333;
   margin-bottom: 20px;
+  text-align: center;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
+/* Paragraph Styles */
 p {
   font-size: 1.3rem;
   color: #555;
   line-height: 1.6;
   margin-bottom: 15px;
+  transition: color 0.3s ease;
 }
 
-.contact-info {
-  margin-top: 20px;
+p:hover {
+  color: rgb(0, 0, 0);
 }
 
-.team {
-  margin-top: 40px;
-  margin-bottom: 1.5rem;
+/* Founder Name */
+.founder-name {
+  margin-top: 30px;
   text-align: center;
 }
 
-.team-member {
-  display: inline-block;
-  width: 200px;
-  margin: 0 15px;
-  padding: 2rem;
-  border-radius: 15px;
+/* Message and Team Member Container */
+.message-team-container {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 2rem;
+  margin-top: 40px;
 }
 
+/* Founder Message Section */
+.founder-message {
+  max-width: 55%;
+  text-align: left;
+}
+
+/* Team Member Section */
+.team-member {
+  width: 70%;
+  max-width: 250px;
+  padding: 1.5rem;
+  border-radius: 15px;
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  background: #fff;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* Team Member Image Container */
+.team-member-img-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+/* Image Styling */
 .team-member img {
-  width: 6.5rem;
-  border-radius: 10%;
+  width: 70%;
+  max-width: 120px;
+  height: auto;
+  border-radius: 20%;
   border: 5px solid #fff;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-.team-member-info {
-  margin-top: 30px;
+/* Contact Info */
+.contact-info {
+  margin-top: 10px;
 }
 
-.team-member-info p {
-  font-size: 1.1rem;
-  font-weight: 500;
-  color: #333;
+/* Hover Effect */
+.team-member:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+  color: antiquewhite;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .about-us-container {
+    padding: 20px;
+    border-radius: 12px;
+  }
+
+  .message-team-container {
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5rem;
+  }
+
+  .founder-message,
+  .team-member {
+    width: 100%;
+    max-width: 100%;
+    text-align: center;
+  }
+
+  h2 {
+    font-size: 1.5rem;
+  }
+
+  p {
+    font-size: 1.1rem;
+  }
 }
 
 /* Animation */
@@ -67,31 +134,4 @@ p {
   to {
     opacity: 1;
   }
-}
-
-/* Fluent Design Enhancements */
-.about-us-container {
-  backdrop-filter: blur(10px);
-}
-
-h2 {
-  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-}
-
-p {
-  transition: color 0.3s ease;
-}
-
-p:hover {
-  color: rgb(0, 0, 0);
-}
-
-.team-member {
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-.team-member:hover {
-  transform: translateY(-10px);
-  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
-  color: antiquewhite;
 }

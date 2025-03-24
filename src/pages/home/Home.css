@@ -73,13 +73,13 @@
   background: radial-gradient(
     circle at 30% 30%,
     rgba(230, 240, 255, 1) 0%,
-    rgba(230, 240, 255, 0.8) 70%
+    rgba(230, 240, 255, 0.893) 70%
   );
-  border: 2px solid rgba(230, 240, 255, 1);
+  border: 2px solid rgba(214, 230, 254, 0.772);
   border-radius: 50%;
-  box-shadow: 0 0 15px rgba(230, 240, 255, 0.8);
+  box-shadow: 0 0 15px rgb(230, 240, 255);
   animation: floatUp 12s ease-in-out infinite,
-    bubbleGlow 3s ease-in-out infinite;
+    bubbleGlow 2s ease-in-out infinite;
 }
 
 /* Smaller Bubble Style with similar glow effect */
@@ -92,11 +92,11 @@
     rgba(230, 240, 255, 1) 0%,
     rgba(230, 240, 255, 0.8) 70%
   );
-  border: 2px solid rgba(230, 240, 255, 1);
+  border: 2px solid rgba(211, 227, 250, 0.777);
   border-radius: 50%;
   box-shadow: 0 0 8px rgba(230, 240, 255, 0.8);
   animation: floatUp 14s ease-in-out infinite,
-    bubbleGlow 3s ease-in-out infinite;
+    bubbleGlow 1s ease-in-out infinite;
 }
 
 /* Enhanced Heart Style with gradient for a realistic look */
@@ -107,7 +107,7 @@
   background: linear-gradient(135deg, #ff6b81, #ff4081);
   transform: rotate(-45deg);
   opacity: 0;
-  animation: floatUp 14s ease-in-out infinite;
+  animation: floatUp 10s ease-in-out infinite;
 }
 .heart::before,
 .heart::after {
@@ -186,6 +186,7 @@
 }
 
 /* Contacts Section */
+/* Contacts Section */
 .contacts {
   max-width: 600px;
   margin: 40px auto;
@@ -209,6 +210,7 @@
   margin-bottom: 20px;
 }
 
+/* Contact Methods Layout */
 .contact-methods {
   display: flex;
   flex-direction: column;
@@ -218,8 +220,20 @@
 .contact-method {
   display: flex;
   align-items: center;
-  margin: 15px 0;
+  padding: 12px;
+  width: 100%;
+  max-width: 450px;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  margin: 10px 0;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
   animation: slideIn 0.5s ease-out;
+}
+
+.contact-method:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
 }
 
 .contact-method:nth-child(even) {
@@ -230,12 +244,19 @@
   animation-delay: 0.4s;
 }
 
+/* Icon Styling */
 .contact-icon {
   font-size: 2rem;
   color: #ff4081;
   margin-right: 15px;
+  transition: color 0.3s ease;
 }
 
+.contact-method:hover .contact-icon {
+  color: #ff005c;
+}
+
+/* Text and Link Styling */
 .contact-method div {
   text-align: left;
 }
@@ -243,11 +264,41 @@
 .contact-method a {
   color: #007bff;
   text-decoration: none;
+  font-weight: bold;
   transition: color 0.3s ease;
 }
 
 .contact-method a:hover {
   color: #0056b3;
+}
+
+/* Phone Number Styling */
+.contact-method p {
+  margin: 0;
+  font-size: 1rem;
+  color: #333;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes slideIn {
+  from {
+    opacity: 0;
+    transform: translateX(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
 }
 
 /* Animations */
@@ -295,4 +346,9 @@
 .aboutUs,
 .contacts {
   scroll-margin-top: 100px;
+}
+.orange_container {
+  background-color: #f26911;
+  height: 65px;
+  width: 100%;
 }

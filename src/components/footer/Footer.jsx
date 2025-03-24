@@ -17,7 +17,7 @@ const Footer = () => {
         <div className="footer_contact">
           <h3>Contact Us</h3>
           <p><FaPhone color="#a0e7e5" /> <a href="tel:+917358936864">+91 73589 36864</a></p>
-          <p><FaEnvelope color="#a0e7e5" /> <a href="mailto:info.babyshopeecbe@gmail.com">info.babyshopeecbe@gmail.com</a></p>
+          <p><FaEnvelope color="#a0e7e5" /> <a href="mailto:babyshopeecbe@gmail.com">babyshopeecbe@gmail.com</a></p>
           <p><FaMapMarkerAlt color="#a0e7e5"/> India</p>
         </div>
 
@@ -48,6 +48,7 @@ const Footer = () => {
   
         </div>
       </div>
+     
     </footer>
   );
 };

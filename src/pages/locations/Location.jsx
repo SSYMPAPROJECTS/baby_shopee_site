@@ -3,6 +3,7 @@ import { useParams, useNavigate, Link } from "react-router-dom";
 import "./Location.css";
 import logo from "../../assets/logos/bbs_logo_png.png";
 
+// Location data for different branches
 const locationData = {
   periyanaickenpalayam: {
     name: "Periyanaickenpalayam",
@@ -36,39 +37,56 @@ const locationData = {
     mapUrl:
       "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3913.298399398478!2d76.95590601403228!3d11.016844792004242!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ba858b191e6c4f5%3A0x3d3c4b2c3a3b2e4d!2sCoimbatore%2C%20Tamil%20Nadu%2C%20India!5e0!3m2!1sen!2sus!4v1699999999999",
   },
+  annur: {
+    name: "Annur",
+    address: "45/8, Opposite to Reliance Trends, Annur Main Road",
+    city: "Coimbatore",
+    pincode: "641653",
+    mapUrl:
+      "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3914.934567890123!2d76.543210!3d11.345678!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ba9abcdef789012%3A0x123456789abcdef!2sAnnur%2C%20Coimbatore%2C%20Tamil%20Nadu%20641653!5e0!3m2!1sen!2sin!4v1699999999999",
+  },
 };
 
 const Location = () => {
-  const { id } = useParams();
+  const { id } = useParams(); // Get location ID from URL
   const navigate = useNavigate();
-  const location = locationData[id];
+  const location = locationData[id]; // Find location data based on the ID
 
+  // Show error if location not found
   if (!location) {
-    return <h2>Location Not Found</h2>;
+    return (
+      <div className="loc-details-container">
+        <h2>❌ Location Not Found</h2>
+        <button className="back-button" onClick={() => navigate("/")}>
+          ⬅ Back to Our Locations
+        </button>
+      </div>
+    );
   }
 
-  // Get the keys of all locations except the current one.
+  // Get the keys of all locations except the current one
   const otherLocations = Object.keys(locationData).filter((key) => key !== id);
 
   return (
     <div className="loc-details-container">
-      {/* Logo */}
+      {/* Logo Section */}
       <div className="logo-container">
         <img src={logo} alt="Company Logo" className="logo" />
       </div>
 
-      {/* Selected Location */}
+      {/* Selected Location Details */}
       <h1>{location.name}</h1>
       <p>
-        <strong>Address:</strong> {location.address}
+        <strong>🏢 Address:</strong> {location.address}
       </p>
       <p>
-        <strong>City:</strong> {location.city}
+        <strong>🏙️ City:</strong> {location.city}
       </p>
       <p>
-        <strong>Pincode:</strong> {location.pincode}
+        <strong>📮 Pincode:</strong> {location.pincode}
       </p>
 
+      {/* Embedded Google Map */}
       <iframe
         src={location.mapUrl}
         width="100%"
@@ -76,20 +94,21 @@ const Location = () => {
         style={{ border: 0, borderRadius: "10px" }}
         allowFullScreen
         loading="lazy"
+        title="Location Map"
       ></iframe>
 
-      {/* Button that returns to the locations (Home) page */}
+      {/* Button to return to the home page */}
       <button className="back-button" onClick={() => navigate("/")}>
         ⬅ Back to Our Locations
       </button>
 
-      {/* Other Locations List */}
-      <h2>Other Locations</h2>
+      {/* List of Other Locations */}
+      <h2>🌐 Other Locations</h2>
       <ul className="location-list">
         {otherLocations.map((locKey) => (
           <li key={locKey}>
-            <Link to={`/location/${locKey}`}>
-              {locationData[locKey].name}
+            <Link to={`/location/${locKey}`} className="location-link">
+              📍 {locationData[locKey].name}
             </Link>
           </li>
         ))}
