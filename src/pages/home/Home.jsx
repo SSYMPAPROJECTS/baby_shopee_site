@@ -124,6 +124,7 @@ const Home = () => {
         </div>
       </div>
     </div>
+
       <Footer />
       <div className="orange_container"></div>
     </div>

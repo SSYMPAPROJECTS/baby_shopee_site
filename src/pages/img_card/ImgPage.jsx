@@ -8,6 +8,8 @@ import img3 from '../../assets/images/banners/baby_bed_banner.jpg';
 import img4 from '../../assets/images/banners/new_born_ess_banner.jpg';
 import img5 from '../../assets/images/banners/baby_gear_banner.jpg';
 import img6 from '../../assets/images/banners/baby_care_banner.jpg';
+import img7 from '../../assets/images/banners/baby_car_banner.jpg';
+import img8 from '../../assets/images/banners/feeding_bottles_banner.jpg';
 import c_1 from '../../assets/images/clothing/c_1.webp';
 import c_2 from '../../assets/images/clothing/c_2.webp';
 import c_3 from '../../assets/images/clothing/c_3.webp';
@@ -56,9 +58,7 @@ import bg_7 from '../../assets/images/baby_gear/bg_7.webp';
 import bg_8 from '../../assets/images/baby_gear/bg_8.webp';
 import bg_9 from '../../assets/images/baby_gear/bg_9.webp';
 import bg_10 from '../../assets/images/baby_gear/bg_10.webp';
-import bc_1 from '../../assets/images/baby_care/bc_1.webp';
 import bc_2 from '../../assets/images/baby_care/bc_2.webp';
-import bc_3 from '../../assets/images/baby_care/bc_3.webp';
 import bc_4 from '../../assets/images/baby_care/bc_4.webp';
 import bc_5 from '../../assets/images/baby_care/bc_5.webp';
 import bc_6 from '../../assets/images/baby_care/bc_6.webp';
@@ -67,6 +67,18 @@ import d_1 from '../../assets/images/diapers/d_1.webp';
 import d_2 from '../../assets/images/diapers/d_2.webp';
 import d_3 from '../../assets/images/diapers/d_3.webp';
 import d_4 from '../../assets/images/diapers/d_4.webp';
+import v1 from '../../assets/images/Electric_Toys/c1.jpg';
+import v2 from '../../assets/images/Electric_Toys/jeep.jpg';
+import v3 from '../../assets/images/Electric_Toys/pc.jpg';
+import v4 from '../../assets/images/Electric_Toys/sports_c.jpg';
+import v5 from '../../assets/images/Electric_Toys/tb.jpg';
+import p1 from '../../assets/images/Feeding_Products/bp.jpg';
+import p2 from '../../assets/images/Feeding_Products/fb.jpg';
+import p3 from '../../assets/images/Feeding_Products/fg.jpg';
+import p4 from '../../assets/images/Feeding_Products/fp.jpg';
+import p5 from '../../assets/images/Feeding_Products/ft.jpg';
+import p6 from '../../assets/images/Feeding_Products/np.jpg';
+import p7 from '../../assets/images/Feeding_Products/ns.jpg';
 
 const imageData = {
     "clothing": { 
@@ -159,24 +171,50 @@ const imageData = {
         description: "Gentle and safe baby care essentials.",
         price: "₹577 onwards",
         extra: [
-            { img: bc_1, title: "Cetaphil Brand", desc: "Gentle skincare essentials for babies." },
             { img: bc_2, title: "Chicco Brand", desc: "High-quality baby care products and accessories." },
-            { img: bc_3, title: "Himalayas Brand", desc: "Herbal and natural baby care solutions." },
-            { img: bc_4, title: "Mee Mee Brand", desc: "Trusted baby care products for daily use." },
-            { img: bc_5, title: "Sample Set 1", desc: "Curated baby essentials for comfort and care." },
-            { img: bc_6, title: "Sample Set 2", desc: "A mix of must-have baby accessories." },
-            { img: bc_7, title: "Sebamed Brand", desc: "Dermatologist-tested skincare for babies." },
+            { img: bc_4, title: "Cetaphil Brand", desc: "Trusted baby care products for daily use." },
+            { img: bc_5, title: "Sebamed Brand", desc: "Curated baby essentials for comfort and care." },
+            { img: bc_6, title: "Mee Mee Brand", desc: "A mix of must-have baby accessories." },
+            { img: bc_7, title: "Himalayas", desc: "Dermatologist-tested skincare for babies." },
             { img: d_1, title: "Baby Diapers", desc: "Soft and absorbent diapers for babies." },
             { img: d_2, title: "Bamboo Eco-Friendly Baby Diaper", desc: "Sustainable and skin-friendly diaper choice." },
             { img: d_3, title: "Disposable Diaper", desc: "Convenient and hygienic disposable diaper." },
             { img: d_4, title: "Reusable Diaper", desc: "Eco-friendly washable diaper for babies." },
-            { img: bb_1, title: "Baby Shampoo Hat", desc: "Helps protect baby's eyes during bath time." },
-            { img: bb_2, title: "Baby Wipes", desc: "Soft and gentle wipes for baby care." },
+            { img: bb_1, title: "Baby Wipes", desc: "Helps protect baby's eyes during bath time." },
+            { img: bb_2, title: "Baby Shampoo Hat", desc: "Soft and gentle wipes for baby care." },
             { img: bb_3, title: "Bath Time Cap", desc: "Comfortable cap for a fun bath experience." },
             { img: bb_4, title: "Baby Shower Cap", desc: "Waterproof cap to keep water out of eyes." },
             { img: bb_5, title: "Baby Bath Duck Toy", desc: "Cute and fun floating toy for bath time." },
         ]        
     },
+    "toys": { 
+    src: img7, 
+    title: "Toys and Fun Vehicles", 
+    description: "Exciting and engaging toys designed to spark creativity and fun for kids.",
+    price: "₹4500 onwards",
+    extra: [
+        { img: v1, title: "Battery Powered Toy Car", desc: "An exciting ride-on car that ensures hours of fun and adventure." },
+        { img: v2, title: "Battery Powered Toy Jeep", desc: "A rugged and stylish toy jeep perfect for outdoor exploration." },
+        { img: v3, title: "Battery Powered Toy Police Car", desc: "A thrilling police car toy that adds excitement to playtime." },
+        { img: v4, title: "Battery Powered Toy Sports Car", desc: "A sleek and speedy sports car to fuel your child’s imagination." },
+        { img: v5, title: "Battery Powered Toy Bike", desc: "A fun and adventurous bike that encourages outdoor play." }
+    ]
+},
+"feeding_p": { 
+    src: img8, 
+    title: "Baby Feeding Essentials", 
+    description: "Essential and comfortable feeding products designed for new mothers and babies.",
+    price: "₹450 onwards",
+    extra: [
+        { img: p1, title: "Breast Pump", desc: "Efficient and easy-to-use pump for convenient breastfeeding." },
+        { img: p2, title: "Feeding Bras", desc: "Comfortable and supportive bras designed for nursing mothers." },
+        { img: p3, title: "Feeding Gowns", desc: "Soft and breathable gowns that ensure ease during feeding." },
+        { img: p4, title: "Feeding Pillows", desc: "Supportive pillows that provide comfort for both mom and baby." },
+        { img: p5, title: "Feeding Tops", desc: "Stylish and functional tops for easy nursing access." },
+        { img: p6, title: "Nipple Pullers", desc: "A gentle and effective solution for inverted or flat nipples." },
+        { img: p7, title: "Nipple Shields", desc: "Protective shields that assist with comfortable breastfeeding." }
+    ]
+},
 };
 
 const ImgPage = () => {
