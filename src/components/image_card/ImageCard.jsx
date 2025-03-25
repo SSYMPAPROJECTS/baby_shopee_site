@@ -15,8 +15,8 @@ const images = [
     { id: "baby_access", src: img2, title: "Baby Accessories" },
     { id: "baby_bed", src: img3, title: "Baby Bedding" },
     { id: "new_born_ess", src: img4, title: "Newborn Essentials" },
-    { id: "baby_gear", src: img5, title: "Baby Gear" },
     { id: "toys", src: img7, title: "Toys and Fun Vehicles" },
+    { id: "baby_gear", src: img5, title: "Baby Gear" },
     { id: "baby_care", src: img6, title: "Baby Care Products" },
     { id: "feeding_p", src: img8, title: "Baby Feeding Essentials" },
 ];
