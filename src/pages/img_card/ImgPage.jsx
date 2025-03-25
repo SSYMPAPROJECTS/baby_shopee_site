@@ -9,7 +9,7 @@ import img4 from '../../assets/images/banners/new_born_ess_banner.jpg';
 import img5 from '../../assets/images/banners/baby_gear_banner.jpg';
 import img6 from '../../assets/images/banners/baby_care_banner.jpg';
 import img7 from '../../assets/images/banners/baby_car_banner.jpg';
-import img8 from '../../assets/images/banners/feeding_bottles_banner.jpg';
+import img8 from '../../assets/images/banners/nursing_banner.jpg';
 import c_1 from '../../assets/images/clothing/c_1.webp';
 import c_2 from '../../assets/images/clothing/c_2.webp';
 import c_3 from '../../assets/images/clothing/c_3.webp';
@@ -202,7 +202,7 @@ const imageData = {
 },
 "feeding_p": { 
     src: img8, 
-    title: "Baby Feeding Essentials", 
+    title: "Nursing Essentials", 
     description: "Essential and comfortable feeding products designed for new mothers and babies.",
     price: "₹450 onwards",
     extra: [
